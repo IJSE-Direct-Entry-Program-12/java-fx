@@ -1,0 +1,61 @@
+/* CSS Comment */
+
+/**{*/
+
+/*}*/
+
+/*#my-id{*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/*.my-class{*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/*#my-id2, #my-id3, .my-class2{*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/*#parent > #child {*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/*#parent > #child-1 > #child-2, .abc {*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/*#parent #child-2{*/
+/*    color: red;*/
+/*    background-color: green;*/
+/*}*/
+
+/** {*/
+/*    -fx-background-color: yellow;*/
+/*    -fx-font-size: 22px;*/
+/*    -fx-text-fill: red;*/
+/*}*/
+
+/*#btn-1{*/
+/*    -fx-background-color: green;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-font-size: 16px;*/
+/*    -fx-font-weight: bold;*/
+/*}*/
+
+/*.dep {*/
+/*    -fx-background-color: orange;*/
+/*    -fx-font-size: 20px;*/
+/*    -fx-border-color: red;*/
+/*    -fx-border-width: 5px;*/
+/*    -fx-background-radius: 200px;*/
+/*    -fx-border-radius: 200px;*/
+/*}*/
+
+#root {
+    -fx-background-color: yellow;
+}
