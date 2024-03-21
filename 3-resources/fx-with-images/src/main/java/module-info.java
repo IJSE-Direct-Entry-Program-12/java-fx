@@ -1,0 +1,2 @@
+module fx.with.images {
+}
