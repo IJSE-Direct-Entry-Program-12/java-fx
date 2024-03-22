@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="lk.ijse.dep12.fx.windows.controller.UndecoratedWindowController" fx:id="root" prefHeight="312.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane layoutX="229.0" layoutY="27.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="77.0" prefWidth="143.0" text="CLOSE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
