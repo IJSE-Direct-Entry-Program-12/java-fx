@@ -1,0 +1,17 @@
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.button:hover {
+    -fx-background-color: lightgray;
+}
+
+.button:focused {
+    -fx-background-color: lightblue;
+}
+
+.vbox {
+    -fx-border-color: transparent lightgray transparent;
+}
