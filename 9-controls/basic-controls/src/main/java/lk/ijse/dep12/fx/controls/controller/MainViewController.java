@@ -13,11 +13,11 @@ public class MainViewController {
     public ColorPicker clrTextFill;
     public Label lbl;
     public Label lblOpacity;
-    public RadioButton rdOption1;
-    public RadioButton rdOption2;
-    public RadioButton rdOption3;
+    public RadioButton rdText;
+    public RadioButton rdDate;
     public Slider slrOpacity;
     public TextField txt;
+    public DatePicker txtDate;
 
     public void btnDisableOnAction(ActionEvent event) {
 
