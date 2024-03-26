@@ -9,6 +9,7 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -32,15 +33,18 @@
       <ColorPicker fx:id="clrBackground" layoutX="185.0" layoutY="149.0" onAction="#clrBackgroundOnAction" />
       <CheckBox fx:id="chkTextFill" layoutX="15.0" layoutY="119.0" mnemonicParsing="false" onAction="#chkTextFillOnAction" text="Text Fill" />
       <CheckBox fx:id="chkBackgroundColor" layoutX="185.0" layoutY="119.0" mnemonicParsing="false" onAction="#chkBackgroundColorOnAction" text="Background Color" />
-      <Label alignment="CENTER" layoutX="15.0" layoutY="193.0" prefHeight="53.0" prefWidth="518.0" style="-fx-border-color: lightgray;" text="Your Text Goes Here">
+      <Label fx:id="lblDisplay" alignment="CENTER" layoutX="15.0" layoutY="193.0" prefHeight="53.0" prefWidth="518.0" style="-fx-border-color: lightgray;" text="Your Text Goes Here">
          <font>
             <Font name="Ubuntu Bold" size="30.0" />
          </font>
       </Label>
       <VBox layoutX="15.0" layoutY="261.0" spacing="10.0">
          <children>
-            <RadioButton fx:id="rdText" mnemonicParsing="false" text="Text" />
-            <RadioButton fx:id="rdDate" mnemonicParsing="false" text="Date" />
+            <RadioButton fx:id="rdText" mnemonicParsing="false" text="Text">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grpInput" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rdDate" mnemonicParsing="false" text="Date" toggleGroup="$grpInput" />
          </children>
       </VBox>
       <DatePicker fx:id="txtDate" layoutX="14.0" layoutY="319.0" />
