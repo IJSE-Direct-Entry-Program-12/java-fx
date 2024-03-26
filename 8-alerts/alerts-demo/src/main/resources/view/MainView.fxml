@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="318.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.alerts.controller.MainViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="255.0" layoutY="45.0" text="Java FX Alerts" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Ubuntu Bold" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="102.0" layoutY="82.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnInfoOnAction" text="INFORMATION">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnWarnOnAction" text="WARNING">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnConfirmOnAction" text="CONFIRMATION">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnErrorOnAction" text="ERROR">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="148.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnPromptOnAction" text="TEXT PROMPT">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
