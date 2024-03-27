@@ -1,4 +1,4 @@
-package lk.ijse.dep12.fx.animation;
+package lk.ijse.dep12.fx.validation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +16,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/MainView.fxml"))));
-        primaryStage.setTitle("Java FX: Animations");
+        primaryStage.setTitle("Validation in Java FX");
         primaryStage.setResizable(false);
         primaryStage.show();
         primaryStage.centerOnScreen();
