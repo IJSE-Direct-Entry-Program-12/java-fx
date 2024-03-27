@@ -35,7 +35,7 @@
     -fx-border-color: red;
 }
 
-.radio-button.error, .check-box.error {
+.radio-button.error, .error .check-box {
     -fx-text-fill: red;
 }
 
@@ -44,7 +44,7 @@
     -fx-border-radius: 100%;
 }
 
-.error .box {
+.error .box{
     -fx-border-color: rgba(255, 0, 0, 0.42) !important;
 }
 

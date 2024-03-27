@@ -21,7 +21,7 @@
       </Label>
       <Button fx:id="btnNewProgram" layoutX="524.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnNewProgramOnAction" prefHeight="30.0" prefWidth="140.0" text="+ NEW PROGRAM" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
       <Line endX="474.0" layoutX="116.0" layoutY="59.0" startX="-107.0" stroke="#4545454e" />
-      <VBox layoutX="14.0" layoutY="65.0" spacing="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0">
+      <VBox fx:id="vBox" layoutX="14.0" layoutY="65.0" spacing="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0">
          <children>
             <HBox prefHeight="0.0" prefWidth="570.0" spacing="5.0">
                <children>
@@ -54,8 +54,8 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="133.0" prefHeight="0.0" prefWidth="570.0" spacing="5.0">
                <children>
-                  <Label alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" minWidth="150.0" mnemonicParsing="true" prefHeight="26.0" prefWidth="150.0" text="Target _Audience : " />
-                  <VBox spacing="10.0">
+                  <Label fx:id="lblAudience" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" minWidth="150.0" mnemonicParsing="true" prefHeight="26.0" prefWidth="150.0" text="Target _Audience : " />
+                  <VBox fx:id="audienceWrapper" spacing="10.0">
                      <children>
                         <CheckBox fx:id="chkSchoolLeavers" mnemonicParsing="false" text="School Leavers" />
                         <CheckBox fx:id="chkUndergraduates" mnemonicParsing="false" text="Undergraduates" />
