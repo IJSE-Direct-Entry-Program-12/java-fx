@@ -44,11 +44,11 @@
     -fx-border-color: rgba(255, 0, 0, 0.56);
 }
 
-#txtDate.error {
+#txtDob.error {
     -fx-border-color: red;
 }
 
-#txtDate.error .text-field{
+#txtDob.error .text-field{
     -fx-border-color: red;
 }
 
