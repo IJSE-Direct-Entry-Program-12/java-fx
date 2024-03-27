@@ -1,0 +1,66 @@
+#root {
+    -fx-background-color: white;
+    -fx-font-family: Ubuntu;
+    -fx-font-size: 14px;
+}
+
+.heading {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+#btnNewClient {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+#btnNewClient:hover {
+    -fx-background-color: rgba(0, 128, 0, 0.73);
+}
+
+.lbl {
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+}
+
+.text-field:hover, .text-field:focused {
+    -fx-border-color: #00b4ff;
+}
+
+.error .radio-button, .error .check-box{
+    -fx-text-fill: red;
+}
+
+.error .radio-button .radio {
+    -fx-border-color: rgba(255, 0, 0, 0.56);
+    -fx-border-radius: 100%;
+}
+
+.error .check-box .box {
+    -fx-border-color: rgba(255, 0, 0, 0.56);
+}
+
+#txtDate.error {
+    -fx-border-color: red;
+}
+
+#txtDate.error .text-field{
+    -fx-border-color: red;
+}
+
+.text-field.error {
+    -fx-border-color: red;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.star{
+    -fx-text-fill: red;
+    -fx-padding: 0 0 0 1px;
+}

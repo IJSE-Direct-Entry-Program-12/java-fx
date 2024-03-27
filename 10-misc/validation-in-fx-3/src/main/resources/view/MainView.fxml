@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="root" prefHeight="399.0" prefWidth="600.0" stylesheets="@../css/MainView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.validation.controller.MainViewController">
+   <children>
+      <Label layoutX="15.0" layoutY="15.0" prefHeight="33.0" prefWidth="339.0" styleClass="heading" text="DATA VALIDATION IN JAVA FX - 3" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Button fx:id="btnNewClient" layoutX="475.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnNewClientOnAction" prefHeight="26.0" prefWidth="118.0" text="+ NEW CLIENT" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="19.0" />
+      <Line endX="469.0" layoutX="115.0" layoutY="60.0" startX="-100.0" stroke="#e1e1e1" />
+      <GridPane fx:id="container" hgap="5.0" layoutX="15.0" layoutY="72.0" prefHeight="305.0" prefWidth="570.0" vgap="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="279.0" minWidth="114.0" prefWidth="114.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="456.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label accessibleText="#txtId" mnemonicParsing="true" styleClass="lbl" text="_ID : " />
+            <TextField fx:id="txtId" editable="false" maxWidth="-Infinity" prefHeight="26.0" prefWidth="202.0" promptText="C-XXXX" GridPane.columnIndex="1" GridPane.hgrow="SOMETIMES" />
+            <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="1">
+               <children>
+                  <Label accessibleText="#txtName" mnemonicParsing="true" styleClass="lbl" text="_NAME" />
+                  <Label />
+                  <Label styleClass="star" text="*" />
+                  <Label styleClass="lbl" text=" : " />
+               </children>
+            </HBox>
+            <TextField fx:id="txtName" promptText="Eg. Kasun Sampath" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label accessibleText="#txtAddress" mnemonicParsing="true" styleClass="lbl" text="_ADDRESS : " GridPane.rowIndex="2" />
+            <TextField fx:id="txtAddress" promptText="Eg. Galle Road, Panadura" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox fx:id="genderWrapper" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rdMale" mnemonicParsing="false" text="MALE">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="grpGender" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rdFemale" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="FEMALE" toggleGroup="$grpGender" />
+               </children>
+            </HBox>
+            <DatePicker fx:id="txtDob" promptText="Eg. 1998-10-09" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <GridPane fx:id="propertyWrapper" hgap="5.0" prefHeight="75.0" prefWidth="451.0" vgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.vgrow="NEVER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="86.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="360.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="chkLand" mnemonicParsing="false" text="LAND" />
+                  <CheckBox fx:id="chkHouse" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" text="HOUSE" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="chkCarVan" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" text="CAR / VAN" GridPane.columnIndex="1" />
+                  <CheckBox fx:id="chkMotorBike" layoutX="213.0" layoutY="14.0" mnemonicParsing="false" text="MOTOR BIKE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </GridPane>
+            <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#btnSaveOnAction" text="SAVE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="49.0" GridPane.rowIndex="3">
+               <children>
+                  <Label accessibleText="#rdMale" mnemonicParsing="true" styleClass="lbl" text="_GENDER" />
+                  <Label />
+                  <Label styleClass="star" text="*" />
+                  <Label styleClass="lbl" text=" : " />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="127.0" GridPane.rowIndex="4">
+               <children>
+                  <Label accessibleText="#txtDob" mnemonicParsing="true" styleClass="lbl" text="_DOB" />
+                  <Label />
+                  <Label styleClass="star" text="*" />
+                  <Label styleClass="lbl" text=" : " />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="166.0" GridPane.rowIndex="5">
+               <children>
+                  <Label accessibleText="#chkLand" mnemonicParsing="true" styleClass="lbl" text="_PROPERTIES" />
+                  <Label />
+                  <Label styleClass="star" text="*" />
+                  <Label styleClass="lbl" text=" : " />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
