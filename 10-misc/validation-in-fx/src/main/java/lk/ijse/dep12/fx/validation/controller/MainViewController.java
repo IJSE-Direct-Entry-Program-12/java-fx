@@ -74,6 +74,7 @@ public class MainViewController {
             control.getStyleClass().remove("error");
         }
 
+        /* Data Validation */
         if (grpGender.getSelectedToggle() == null) {
             rdMale.getStyleClass().add("error");
             rdFemale.getStyleClass().add("error");
