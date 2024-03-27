@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.navigation.controller.ConsoleViewController">
+   <children>
+      <TextArea fx:id="txtDisplay" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="575.0" promptText="No Messages Yet" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="22.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
