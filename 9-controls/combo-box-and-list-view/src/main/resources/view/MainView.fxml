@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.MainView"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="398.0" prefWidth="550.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.controls.controller.MainViewController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="COMBO BOX AND LIST VIEW DEMO">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="49.0" style="-fx-font-family: Ubuntu;" text="Enter something to add: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtInput" layoutX="14.0" layoutY="72.0" prefHeight="24.0" prefWidth="219.0" style="-fx-font-family: Ubuntu;" />
+      <Button fx:id="btnAdd" defaultButton="true" layoutX="243.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="24.0" prefWidth="61.0" style="-fx-font-family: Ubuntu;" text="ADD" />
+      <ComboBox fx:id="cmbInputs" layoutX="14.0" layoutY="111.0" prefHeight="24.0" prefWidth="219.0" style="-fx-font-family: Ubuntu;" />
+      <Label fx:id="lblOutput" alignment="CENTER" layoutX="14.0" layoutY="149.0" prefHeight="24.0" prefWidth="525.0" style="-fx-font-family: Ubuntu; -fx-background-color: lightgray; -fx-background-radius: 5px;" />
+      <ListView fx:id="lstView1" layoutX="14.0" layoutY="185.0" prefHeight="200.0" prefWidth="219.0" style="-fx-font-family: Ubuntu;" />
+      <VBox layoutX="253.0" layoutY="249.0" prefHeight="73.0" prefWidth="47.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnNext" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNextOnAction" prefHeight="34.0" prefWidth="47.0" style="-fx-font-family: Ubuntu;" text="&gt;&gt;" />
+            <Button fx:id="btnBack" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="34.0" style="-fx-font-family: Ubuntu;" text="&lt;&lt;" />
+         </children>
+      </VBox>
+      <ListView fx:id="lstView2" layoutX="318.0" layoutY="185.0" prefHeight="200.0" prefWidth="219.0" style="-fx-font-family: Ubuntu;" />
+      <Button fx:id="btnClear" layoutX="243.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnClearOnAction" style="-fx-font-family: Ubuntu;" text="CLEAR" />
+      <Button layoutX="458.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnDemo2OnAction" prefHeight="24.0" prefWidth="82.0" text="DEMO 2" />
+   </children>
 </AnchorPane>

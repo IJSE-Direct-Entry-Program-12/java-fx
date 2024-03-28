@@ -1,2 +1,4 @@
-module combo.box.and.list.view {
+open module lk.ijse.dep12.fx.controls {
+    requires javafx.controls;
+    requires javafx.fxml;
 }
