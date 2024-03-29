@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="600.0" stylesheets="@../css/MainView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.progress.controller.MainViewController">
+   <children>
+      <Button fx:id="btnInstall" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnInstallOnAction" prefHeight="24.0" prefWidth="79.0" text="INSTALL" />
+      <Label layoutX="14.0" layoutY="14.0" text="PROGRESS BAR DEMO">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="pbInstall" layoutX="14.0" layoutY="115.0" prefHeight="20.0" prefWidth="571.0" progress="0.0" />
+      <Label fx:id="lblStatus" layoutX="14.0" layoutY="93.0" prefHeight="16.0" prefWidth="522.0" text="Click install to proceed">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgress" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="93.0" prefHeight="19.0" prefWidth="99.0" text="0%">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRestore" layoutX="15.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnRestoreOnAction" text="RESTORE" />
+      <ProgressBar fx:id="pbRestore" layoutX="15.0" layoutY="213.0" prefHeight="20.0" prefWidth="571.0" progress="0.0" />
+      <Label fx:id="lblRestoreStatus" layoutX="15.0" layoutY="191.0" prefHeight="16.0" prefWidth="522.0" text="Click restore to start the restoration process">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRestoreProgress" alignment="CENTER_RIGHT" layoutX="485.0" layoutY="191.0" prefHeight="19.0" prefWidth="99.0" text="0%">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

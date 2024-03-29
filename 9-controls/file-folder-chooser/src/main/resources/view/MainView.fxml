@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="lk.ijse.dep12.fx.chooser.controller.MainViewController" prefHeight="163.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" text="FILE CHOOSER AND DIRECTORY CHOOSER">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="163.0" text="SAVE DIALOG" />
+      <Button fx:id="btnOpen" layoutX="14.0" layoutY="89.0" mnemonicParsing="false" onAction="#btnOpenOnAction" prefHeight="24.0" prefWidth="163.0" text="OPEN DIALOG" />
+      <Button fx:id="btnDirectoryChooser" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnDirectoryChooserOnAction" text="DIRECTORY CHOOSER" />
+      <TextField fx:id="txtSave" editable="false" layoutX="186.0" layoutY="57.0" prefHeight="24.0" prefWidth="396.0" />
+      <TextField fx:id="txtOpen" editable="false" layoutX="186.0" layoutY="89.0" prefHeight="24.0" prefWidth="396.0" />
+      <TextField fx:id="txtDirectory" editable="false" layoutX="186.0" layoutY="121.0" prefHeight="24.0" prefWidth="396.0" />
+   </children>
+</AnchorPane>
