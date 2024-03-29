@@ -1,15 +1,12 @@
 package lk.ijse.dep12.fx.table;
 
-import javafx.scene.control.Button;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
-    private int id;
-    private String name;
-    private String address;
-    private List<String> contactList;
+    private final int id;
+    private final String name;
+    private final String address;
+    private final List<String> contactList;
 
     public Customer(int id, String name, String address, List<String> contactList) {
         this.id = id;
@@ -18,15 +15,15 @@ public class Customer {
         this.contactList = contactList;
     }
 
-    public String getId(){
+    public String getId() {
         return "C%03d".formatted(id);
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String getAddress(){
+    public String getAddress() {
         return address;
     }
 

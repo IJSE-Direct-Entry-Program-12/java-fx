@@ -1,0 +1,58 @@
+#root {
+    -fx-font-family: Ubuntu;
+}
+
+.button {
+    -fx-padding: 7px;
+    -fx-cursor: hand;
+}
+
+.star {
+    -fx-text-fill: red;
+    -fx-padding: 0 0 0 2px;
+}
+
+.heading {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px !important;
+}
+
+.label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .text-field:hover {
+    -fx-border-color: #00beff;
+}
+
+.error .radio-button {
+    -fx-text-fill: red;
+}
+
+.error .radio-button .radio{
+    -fx-border-color: red;
+    -fx-border-radius: 100%;
+}
+
+.error .text-field {
+    -fx-border-color: red;
+}
+
+.list-view {
+    -fx-border-color: lightgray;
+}
+
+.error .list-view {
+    -fx-border-color: red;
+}
+
+.text-field.error {
+    -fx-border-color: red;
+}
