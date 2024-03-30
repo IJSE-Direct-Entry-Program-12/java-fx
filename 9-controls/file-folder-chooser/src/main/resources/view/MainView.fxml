@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:controller="lk.ijse.dep12.fx.chooser.controller.MainViewController" prefHeight="163.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="163.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.fx.chooser.controller.MainViewController">
    <children>
       <Label layoutX="94.0" layoutY="14.0" text="FILE CHOOSER AND DIRECTORY CHOOSER">
          <font>
